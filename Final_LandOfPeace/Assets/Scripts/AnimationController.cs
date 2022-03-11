@@ -9,7 +9,9 @@ public class AnimationController : MonoBehaviour
     private bool _isPicking = false;
 
     private Animator anim;
-   
+
+    public AudioSource Footsteps_gravel_sfx_1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,7 @@ public class AnimationController : MonoBehaviour
             {
                 _isWalking = true;
                 anim.Play("Walking");
+                Footsteps_gravel_sfx_1.Play();
 
             }
 
@@ -39,6 +42,7 @@ public class AnimationController : MonoBehaviour
                 anim.Play("Idle");
                }
             _isWalking = false;
+            Footsteps_gravel_sfx_1.Pause();
         }
 
         if (Input.GetKey("space"))
