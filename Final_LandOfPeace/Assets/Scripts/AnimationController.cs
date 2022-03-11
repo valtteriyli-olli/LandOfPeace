@@ -6,6 +6,7 @@ public class AnimationController : MonoBehaviour
 {
     private bool _isWalking = false;
     private bool _isJumping = false;
+    private bool _isPicking = false;
 
     private Animator anim;
    
@@ -45,7 +46,7 @@ public class AnimationController : MonoBehaviour
             if (!_isJumping)
             {
                 _isJumping = true;
-                anim.Play("Jumping");
+                anim.Play("JumpingCool");
             }
             else
             {
@@ -55,7 +56,30 @@ public class AnimationController : MonoBehaviour
                     _isJumping = false;
                 }
             }
+
+
+        }
+
+        if (Input.GetKey("f"))
+        {
+            if (!_isPicking)
+            {
+                _isPicking = true;
+                anim.Play("Picking up");
+               
+            }
+            else
+            {
+                if (_isPicking)
+                {
+                    anim.Play("Idle");
+                    _isPicking = false;
+                }
+            }
+
+
         }
 
     }
+    
 }
