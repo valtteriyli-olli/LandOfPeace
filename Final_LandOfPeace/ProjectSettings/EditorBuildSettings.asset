@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/UI.unity
     guid: fa3705fd14b572b4a983c22d54312ba8
   - enabled: 1
-    path: Assets/Scenes/ViedoCinematic.unity
+    path: Assets/Scenes/FirstTalkVid.unity
     guid: 60d47c4e36212aa43bfd2d15221afb92
   - enabled: 1
     path: Assets/Scenes/FinalMainScene.unity
