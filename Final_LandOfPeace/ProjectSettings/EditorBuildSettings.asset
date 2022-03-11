@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ViedoCinematic.unity
     guid: 60d47c4e36212aa43bfd2d15221afb92
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-    guid: 5134dd6d47c48fa4884c9f461935f302
+    path: Assets/Scenes/FinalMainScene.unity
+    guid: de35610d41d84644ba3beaad0e35187b
   m_configObjects: {}
